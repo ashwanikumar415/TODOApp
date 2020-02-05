@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import './component.css'
 const uuidGenerator = require('uuid/v1');
 // Below is functionComponent
 // use useState to manange states
@@ -14,7 +15,7 @@ export const TaskAdder = (props) => {
     }
 
    return (
-        <div>
+        <div className="topPadding">
             <label >Add Task</label>
             <input 
                 type ="text"

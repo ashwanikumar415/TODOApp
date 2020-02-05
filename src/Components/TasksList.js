@@ -1,4 +1,5 @@
 import React from 'react'
+import './component.css'
 
 export class TasksList extends React.Component {
     constructor(props) {
@@ -13,7 +14,7 @@ export class TasksList extends React.Component {
     render() {
         console.log("props:",this.props)
         return(
-            <ul onClick = {this.clickHandler}>
+            <ul cssClassName = "topPadding" onClick = {this.clickHandler}>
              {this.props.list.map((elem) => {
                   return <li key={elem.id} 
                             data-key = {elem.id}>{elem.text}</li>
